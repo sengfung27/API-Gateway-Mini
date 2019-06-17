@@ -5,15 +5,11 @@ var bodyParser = require('body-parser');
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({ extended: true }));
 
-app.get('/', (req, res) => {
-    res.send("Hello from Service")
-})
-
 app.get('/hello', (req, res) => {
-    res.send("Hello, World!")
+    res.send("Response from Service")
 })
 
 
-console.log("Services run on localhost:3001")
+console.log("Service runs on localhost:3001")
 
 app.listen(3001);

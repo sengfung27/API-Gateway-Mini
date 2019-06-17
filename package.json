@@ -1,0 +1,24 @@
+{
+  "name": "api-gateway-mini",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "apiGateway": "node ./gateway/index.js",
+    "service": "node ./service/index.js",
+    "start": "start node ./gateway/index.js && start node ./service/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sengfung27/API-Gateway-Mini.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sengfung27/API-Gateway-Mini/issues"
+  },
+  "homepage": "https://github.com/sengfung27/API-Gateway-Mini#readme",
+  "devDependencies": {
+    "npm-run-all": "^4.1.5"
+  }
+}

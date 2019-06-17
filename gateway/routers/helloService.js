@@ -5,10 +5,11 @@ const apiAdapter = require('./apiAdapter')
 const BASE_URL = 'http://localhost:3001'
 const api = apiAdapter(BASE_URL)
 
-router.get('/hello', (req, res) => {
-  api.get(req.path).then(resp => {
-    res.send("Response from service: " + resp.data)
-  })
+router.get('/', (req, res) => {
+  api.get('/hello')
+    .then(resp => {
+      res.send("Forward from / to /hello :" + resp.data)
+    })
 })
 
 module.exports = router
